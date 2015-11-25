@@ -1,0 +1,5 @@
+[ceylon]
+name=Ceylon RPM repository
+baseurl=https://downloads.ceylon-lang.org/rpm
+gpgcheck=1
+enabled=1
