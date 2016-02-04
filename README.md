@@ -1,16 +1,5 @@
-## Generate an RPM repo for Ceylon
+## RedHat/Fedora/CentOS packages for Ceylon
 
-You need to have an RPM-based machine (Fedora/RHEL works) for this to work.
+ - See the [package/README](package/README.md) for instructions on building an RPM package
+ - And the [repo/README](repo/README.md) for instructions on generating a repository
 
-Install the createrepo package:
-
-    $ sudo yum install createrepo
-
-Make sure you have the private GPG key to be allowed to sign.
-
-Now make the repo:
-
-    $ ./build.sh
-
-This will download any rpm file for Ceylon unless already present in the current folder,
-sign them and create an RPM repo in `repodata`.
