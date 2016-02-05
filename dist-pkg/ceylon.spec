@@ -6,7 +6,7 @@
 
 %define major_version 1
 %define minor_version 2
-%define micro_version 0
+%define micro_version 1
 %define ceylon_home /usr/lib/ceylon/%{major_version}.%{minor_version}.%{micro_version}
 
 # The name of the source zip file (without .zip)
@@ -80,6 +80,7 @@ cp -pr doc/man/man1/ceylon-doc.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-doc-%{ver
 cp -pr doc/man/man1/ceylon-help.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-help-%{version}.1
 cp -pr doc/man/man1/ceylon-import-jar.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-import-jar-%{version}.1
 cp -pr doc/man/man1/ceylon-info.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-info-%{version}.1
+cp -pr doc/man/man1/ceylon-jigsaw.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-jigsaw-%{version}.1
 cp -pr doc/man/man1/ceylon-p2.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-p2-%{version}.1
 cp -pr doc/man/man1/ceylon-plugin.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-plugin-%{version}.1
 cp -pr doc/man/man1/ceylon-run-js.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-run-js-%{version}.1
@@ -109,6 +110,7 @@ cp -pr doc/en/spec/info/ceylon-spec.info-2 $RPM_BUILD_ROOT%{_infodir}/ceylon-spe
     --slave %{_mandir}/man1/ceylon-help.1 ceylon-help-man %{_mandir}/man1/ceylon-help-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-import-jar.1 ceylon-import-jar-man %{_mandir}/man1/ceylon-import-jar-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-info.1 ceylon-info-man %{_mandir}/man1/ceylon-info-%{version}.1.gz \
+    --slave %{_mandir}/man1/ceylon-jigsaw.1 ceylon-info-man %{_mandir}/man1/ceylon-jigsaw-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-p2.1 ceylon-p2-man %{_mandir}/man1/ceylon-p2-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-plugin.1 ceylon-plugin-man %{_mandir}/man1/ceylon-plugin-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-run-js.1 ceylon-run-js-man %{_mandir}/man1/ceylon-run-js-%{version}.1.gz \
@@ -143,6 +145,8 @@ fi
 
 
 %changelog
+* Thu Feb 4 2016 Tako Schotanus <tschotan@redhat.com> 1.2.1-0
+- Update for 1.2.1
 * Wed Oct 28 2015 Tako Schotanus <tschotan@redhat.com> 1.2.0-0
 - Update for 1.2.0
 - Now installing .info files as well
