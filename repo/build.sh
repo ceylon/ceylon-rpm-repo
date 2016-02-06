@@ -9,7 +9,7 @@ rm -rf repodata
 
 for pkg in $RPMS
 do
- if test -f $okg
+ if test -f $pkg
  then
   echo "Not downloading $pkg: already there"
  else
@@ -17,5 +17,5 @@ do
  fi
 done
 
-createrepo $RPMS
+createrepo .
 rpm --addsign $RPMS
