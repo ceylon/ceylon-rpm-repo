@@ -7,6 +7,7 @@
 %define major_version 1
 %define minor_version 2
 %define micro_version 1
+%define alternatives_version 12010
 %define ceylon_home /usr/lib/ceylon/%{major_version}.%{minor_version}.%{micro_version}
 
 # The name of the source zip file (without .zip)
@@ -95,7 +96,7 @@ cp -pr doc/en/spec/info/ceylon-spec.info-1 $RPM_BUILD_ROOT%{_infodir}/ceylon-spe
 cp -pr doc/en/spec/info/ceylon-spec.info-2 $RPM_BUILD_ROOT%{_infodir}/ceylon-spec-%{version}.info-2
 
 %post
-%{_sbindir}/update-alternatives --install %{_bindir}/ceylon ceylon %{ceylon_home}/bin/ceylon 12000 \
+%{_sbindir}/update-alternatives --install %{_bindir}/ceylon ceylon %{ceylon_home}/bin/ceylon %{alternatives_version} \
     --slave %{_prefix}/lib/ceylon/ceylon ceylon-dir %{_prefix}/lib/ceylon/%{version} \
     --slave %{_mandir}/man1/ceylon.1 ceylon-main-man %{_mandir}/man1/ceylon-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-bash-completion.1 ceylon-bash-completion-man %{_mandir}/man1/ceylon-bash-completion-%{version}.1.gz \
