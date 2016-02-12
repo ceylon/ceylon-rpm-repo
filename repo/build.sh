@@ -16,5 +16,5 @@ do
  fi
 done
 
-createrepo .
 rpm --addsign $RPMS
+createrepo .
