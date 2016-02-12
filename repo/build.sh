@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 RPMS="ceylon-1.0.0-1.0.0-0.noarch.rpm \
  ceylon-1.1.0-1.1.0-0.noarch.rpm \
  ceylon-1.1.0-1.1.0-1.noarch.rpm \
