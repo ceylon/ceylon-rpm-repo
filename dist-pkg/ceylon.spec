@@ -83,7 +83,6 @@ cp -pr doc/man/man1/ceylon-help.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-help-%{v
 cp -pr doc/man/man1/ceylon-import-jar.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-import-jar-%{version}.1
 cp -pr doc/man/man1/ceylon-info.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-info-%{version}.1
 cp -pr doc/man/man1/ceylon-jigsaw.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-jigsaw-%{version}.1
-cp -pr doc/man/man1/ceylon-new.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-new-%{version}.1
 cp -pr doc/man/man1/ceylon-p2.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-p2-%{version}.1
 cp -pr doc/man/man1/ceylon-plugin.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-plugin-%{version}.1
 cp -pr doc/man/man1/ceylon-run-js.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-run-js-%{version}.1
@@ -115,7 +114,6 @@ cp -pr doc/en/spec/info/ceylon-spec.info-2 $RPM_BUILD_ROOT%{_infodir}/ceylon-spe
     --slave %{_mandir}/man1/ceylon-import-jar.1 ceylon-import-jar-man %{_mandir}/man1/ceylon-import-jar-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-info.1 ceylon-info-man %{_mandir}/man1/ceylon-info-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-jigsaw.1 ceylon-jigsaw-man %{_mandir}/man1/ceylon-jigsaw-%{version}.1.gz \
-    --slave %{_mandir}/man1/ceylon-new.1 ceylon-new-man %{_mandir}/man1/ceylon-new-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-p2.1 ceylon-p2-man %{_mandir}/man1/ceylon-p2-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-plugin.1 ceylon-plugin-man %{_mandir}/man1/ceylon-plugin-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-run-js.1 ceylon-run-js-man %{_mandir}/man1/ceylon-run-js-%{version}.1.gz \
