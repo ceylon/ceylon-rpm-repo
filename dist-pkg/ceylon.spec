@@ -60,7 +60,6 @@ mkdir -p $RPM_BUILD_ROOT%{ceylon_home}/{bin,lib,repo,doc,doc/en,samples,template
 install -d -m 755 %{buildroot}%{_mandir}/man1
 install -d -m 755 %{buildroot}%{_infodir}
 
-rm -f bin/*.bat
 cp -pr bin/* $RPM_BUILD_ROOT%{ceylon_home}/bin
 cp -pr repo/* $RPM_BUILD_ROOT%{ceylon_home}/repo
 cp -pr lib/* $RPM_BUILD_ROOT%{ceylon_home}/lib
