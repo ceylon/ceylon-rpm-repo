@@ -70,6 +70,7 @@ cp -pr templates/* $RPM_BUILD_ROOT%{ceylon_home}/templates
 cp -pr contrib/* $RPM_BUILD_ROOT%{ceylon_home}/contrib
 cp -pr doc/man/man1/ceylon.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-%{version}.1
 cp -pr doc/man/man1/ceylon-bash-completion.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-bash-completion-%{version}.1
+cp -pr doc/man/man1/ceylon-bootstrap.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-bootstrap-%{version}.1
 cp -pr doc/man/man1/ceylon-browse.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-browse-%{version}.1
 cp -pr doc/man/man1/ceylon-classpath.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-classpath-%{version}.1
 cp -pr doc/man/man1/ceylon-compile-js.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-compile-js-%{version}.1
@@ -78,6 +79,7 @@ cp -pr doc/man/man1/ceylon-config.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-config
 cp -pr doc/man/man1/ceylon-copy.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-copy-%{version}.1
 cp -pr doc/man/man1/ceylon-doc-tool.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-doc-tool-%{version}.1
 cp -pr doc/man/man1/ceylon-doc.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-doc-%{version}.1
+cp -pr doc/man/man1/ceylon-fat-jar.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-fat-jar-%{version}.1
 cp -pr doc/man/man1/ceylon-help.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-help-%{version}.1
 cp -pr doc/man/man1/ceylon-import-jar.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-import-jar-%{version}.1
 cp -pr doc/man/man1/ceylon-info.1 $RPM_BUILD_ROOT%{_mandir}/man1/ceylon-info-%{version}.1
@@ -100,6 +102,7 @@ cp -pr doc/en/spec/info/ceylon-spec.info-2 $RPM_BUILD_ROOT%{_infodir}/ceylon-spe
     --slave %{_prefix}/lib/ceylon/ceylon ceylon-dir %{_prefix}/lib/ceylon/%{version} \
     --slave %{_mandir}/man1/ceylon.1 ceylon-main-man %{_mandir}/man1/ceylon-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-bash-completion.1 ceylon-bash-completion-man %{_mandir}/man1/ceylon-bash-completion-%{version}.1.gz \
+    --slave %{_mandir}/man1/ceylon-bootstrap.1 ceylon-bootstrap-man %{_mandir}/man1/ceylon-bootstrap-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-browse.1 ceylon-browse-man %{_mandir}/man1/ceylon-browse-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-classpath.1 ceylon-classpath-man %{_mandir}/man1/ceylon-classpath-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-compile-js.1 ceylon-compile-js-man %{_mandir}/man1/ceylon-compile-js-%{version}.1.gz \
@@ -108,6 +111,7 @@ cp -pr doc/en/spec/info/ceylon-spec.info-2 $RPM_BUILD_ROOT%{_infodir}/ceylon-spe
     --slave %{_mandir}/man1/ceylon-copy.1 ceylon-copy-man %{_mandir}/man1/ceylon-copy-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-doc-tool.1 ceylon-doc-tool-man %{_mandir}/man1/ceylon-doc-tool-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-doc.1 ceylon-doc-man %{_mandir}/man1/ceylon-doc-%{version}.1.gz \
+    --slave %{_mandir}/man1/ceylon-fat-jar.1 ceylon-fat-jar-man %{_mandir}/man1/ceylon-fat-jar-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-help.1 ceylon-help-man %{_mandir}/man1/ceylon-help-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-import-jar.1 ceylon-import-jar-man %{_mandir}/man1/ceylon-import-jar-%{version}.1.gz \
     --slave %{_mandir}/man1/ceylon-info.1 ceylon-info-man %{_mandir}/man1/ceylon-info-%{version}.1.gz \
@@ -133,7 +137,9 @@ fi
 %files
 %defattr(-,root,root)
 %attr(755,root,root) %{ceylon_home}/bin/ceylon
+%attr(755,root,root) %{ceylon_home}/bin/ceylon.bat
 %{ceylon_home}/bin/ceylon-sh-setup
+%{ceylon_home}/bin/ceylon-sh-setup.bat
 %{ceylon_home}/bin/*.plugin
 %{ceylon_home}/repo/*
 %{ceylon_home}/lib/*
