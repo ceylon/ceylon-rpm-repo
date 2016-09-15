@@ -35,6 +35,7 @@ BuildArch:     noarch
 BuildRequires: zip
 Requires(post): %{_sbindir}/update-alternatives
 Requires(postun): %{_sbindir}/update-alternatives
+AutoReqProv: no
 
 %description
 Ceylon is a programming language for writing large programs in a team
