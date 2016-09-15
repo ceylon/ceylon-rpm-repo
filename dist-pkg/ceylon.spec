@@ -61,6 +61,8 @@ mkdir -p $RPM_BUILD_ROOT%{ceylon_home}/{bin,lib,repo,doc,doc/en,samples,template
 install -d -m 755 %{buildroot}%{_mandir}/man1
 install -d -m 755 %{buildroot}%{_infodir}
 
+cp -pr BUILDID $RPM_BUILD_ROOT%{ceylon_home}/
+cp -pr LICENSE-* $RPM_BUILD_ROOT%{ceylon_home}/
 cp -pr bin/* $RPM_BUILD_ROOT%{ceylon_home}/bin
 cp -pr repo/* $RPM_BUILD_ROOT%{ceylon_home}/repo
 cp -pr lib/* $RPM_BUILD_ROOT%{ceylon_home}/lib
@@ -112,6 +114,8 @@ fi
 %{ceylon_home}/samples/*
 %{ceylon_home}/templates/*
 %{ceylon_home}/contrib/*
+%{ceylon_home}/BUILDID
+%{ceylon_home}/LICENSE-*
 
 
 %changelog
