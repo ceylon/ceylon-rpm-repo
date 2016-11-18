@@ -6,8 +6,8 @@
 
 %define major_version 1
 %define minor_version 3
-%define micro_version 0
-%define alternatives_version 13000
+%define micro_version 1
+%define alternatives_version 13010
 %define ceylon_home /usr/lib/ceylon/%{major_version}.%{minor_version}.%{micro_version}
 
 # The name of the source zip file (without .zip)
@@ -119,8 +119,12 @@ fi
 
 
 %changelog
+* Fri Nov 18 2016 Tako Schotanus <tschotan@redhat.com> 1.3.1-0
+- Update for 1.3.1
 * Wed Sep 14 2016 Tako Schotanus <tschotan@redhat.com> 1.3.0-0
 - Update for 1.3.0
+* Tue Mar 8 2016 Tako Schotanus <tschotan@redhat.com> 1.2.2-0
+- Update for 1.2.2
 * Thu Feb 11 2016 Tako Schotanus <tschotan@redhat.com> 1.2.1-1
 - Fixed problem with alternatives
 * Thu Feb 4 2016 Tako Schotanus <tschotan@redhat.com> 1.2.1-0
