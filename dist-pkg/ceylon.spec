@@ -23,7 +23,7 @@
 Name: ceylon-%{version}
 Epoch: 0
 Version: %{major_version}.%{minor_version}.%{micro_version}
-Release: 0
+Release: 1
 Summary: Ceylon language
 
 Group: Development/Languages
@@ -119,6 +119,8 @@ fi
 
 
 %changelog
+* Mon Nov 21 2016 Tako Schotanus <tschotan@redhat.com> 1.3.1-1
+- New release for 1.3.1 because of bugs
 * Fri Nov 18 2016 Tako Schotanus <tschotan@redhat.com> 1.3.1-0
 - Update for 1.3.1
 * Wed Sep 14 2016 Tako Schotanus <tschotan@redhat.com> 1.3.0-0
