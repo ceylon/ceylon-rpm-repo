@@ -26,7 +26,7 @@
 Name: ceylon-%{version}
 Epoch: 0
 Version: %{major_version}.%{minor_version}.%{micro_version}
-Release: 1
+Release: 0
 Summary: Ceylon language
 
 Group: Development/Languages
