@@ -6,8 +6,11 @@
 
 %define major_version 1
 %define minor_version 3
-%define micro_version 1
-%define alternatives_version 13010
+%define micro_version 2
+
+# Make sure the following is [MAJOR][MINOR][MICRO]0 with MINOR and MICRO being 0-padded to 2 digits (yes, there's an extra 0 on the end)
+%define alternatives_version 103020
+
 %define ceylon_home /usr/lib/ceylon/%{major_version}.%{minor_version}.%{micro_version}
 
 # The name of the source zip file (without .zip)
@@ -119,6 +122,8 @@ fi
 
 
 %changelog
+* Wed Mar 1 2017 Tako Schotanus <tschotan@redhat.com> 1.3.2-0
+- Update for 1.3.2
 * Mon Nov 21 2016 Tako Schotanus <tschotan@redhat.com> 1.3.1-1
 - New release for 1.3.1 because of bugs
 * Fri Nov 18 2016 Tako Schotanus <tschotan@redhat.com> 1.3.1-0
