@@ -20,7 +20,7 @@ PRIO=$(printf "%d%02d%02d0" ${VS[0]} ${VS[1]} ${VS[2]})
 echo "Using version $VERSION and priority $PRIO..."
 
 CHDATE=`date "+* %a %b %d %Y"`
-CHAUTHOR="Stephane Epardaud <stef@epardaud.fr>"
+CHAUTHOR="Stephane Epardaud <stef\@epardaud.fr>"
 
 perl -pi -e "s/(#.*\@NEW_VERSION\@)/RPMS=\"\\\$RPMS ceylon-${VERSION}_${VERSION}-0.noarch.rpm\"\n\$1/" repo/build.sh
 perl -pi -e "s/^(%changelog)$/\$1\n$CHDATE $CHAUTHOR ${VERSION}-0\n- New version ${VERSION}/" dist-pkg/ceylon.spec
