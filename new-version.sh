@@ -22,7 +22,7 @@ echo "Using version $VERSION and priority $PRIO..."
 CHDATE=`date "+* %a %b %d %Y"`
 CHAUTHOR="Stephane Epardaud <stef\@epardaud.fr>"
 
-perl -pi -e "s/(#.*\@NEW_VERSION\@)/RPMS=\"\\\$RPMS ceylon-${VERSION}_${VERSION}-0.noarch.rpm\"\n\$1/" repo/build.sh
+perl -pi -e "s/(#.*\@NEW_VERSION\@)/RPMS=\"\\\$RPMS ceylon-${VERSION}-${VERSION}-0.noarch.rpm\"\n\$1/" repo/build.sh
 perl -pi -e "s/^(%changelog)$/\$1\n$CHDATE $CHAUTHOR ${VERSION}-0\n- New version ${VERSION}/" dist-pkg/ceylon.spec
 perl -pi -e "s/^(%define major_version) .*$/\$1 ${VS[0]}/" dist-pkg/ceylon.spec
 perl -pi -e "s/^(%define minor_version) .*$/\$1 ${VS[1]}/" dist-pkg/ceylon.spec
