@@ -6,10 +6,10 @@
 
 %define major_version 1
 %define minor_version 3
-%define micro_version 2
+%define micro_version 3
 
 # Make sure the following is [MAJOR][MINOR][MICRO]0 with MINOR and MICRO being 0-padded to 2 digits (yes, there's an extra 0 on the end)
-%define alternatives_version 103020
+%define alternatives_version 103030
 
 %define ceylon_home /usr/lib/ceylon/%{major_version}.%{minor_version}.%{micro_version}
 
@@ -122,6 +122,8 @@ fi
 
 
 %changelog
+* Fri Aug 18 2017 Stephane Epardaud <stef@epardaud.fr> 1.3.3-0
+- New version 1.3.3
 * Wed Mar 1 2017 Tako Schotanus <tschotan@redhat.com> 1.3.2-0
 - Update for 1.3.2
 * Mon Nov 21 2016 Tako Schotanus <tschotan@redhat.com> 1.3.1-1
